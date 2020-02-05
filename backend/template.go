@@ -84,7 +84,7 @@ func parseTemplate(path string) (*template, error) {
 		}
 	}
 
-	cft, err := goformation.Parse(data)
+	cft, err := goformation.ParseJSON(data)
 	if err != nil {
 		return nil, err
 	}
